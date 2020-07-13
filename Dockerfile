@@ -42,11 +42,11 @@ RUN pip3 install opencv-python
 RUN apt-get install -y python3.5-tk
 RUN pip3 install pillow
 RUN pip3 install flask
-RUN pip3 install tensorflow-1.15.3-cp35-cp35m-linux_x86_64.whl
-RUN pip3.5 list
+#RUN pip3 install tensorflow-1.15.3-cp35-cp35m-linux_x86_64.whl
+RUN pip3.6 list
 
 EXPOSE 5000
 
 #CMD []
 #ENTRYPOINT ["/bin/bash"]
-CMD ["python3.5", "app.py"]
+CMD ["python3.6", "app.py"]
